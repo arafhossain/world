@@ -15,9 +15,11 @@
 }
 .nav-link:hover{
   color:maroon;
+  cursor: pointer;
 }
 
 .nav-link.active {
   color: white !important;
+  cursor: default;
   font-weight: bold;
 }
