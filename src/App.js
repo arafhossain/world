@@ -1,12 +1,10 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import { Waves } from './components/Waves'
+import { Page } from './components/Page'
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Waves />
+      <Page />
     </div>
   );
 }

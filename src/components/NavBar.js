@@ -42,10 +42,10 @@ class NavBar extends React.Component {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <a className="nav-link active" aria-current="page">Home</a>
-              <a className="nav-link">Projects</a>
-              <a className="nav-link">Blog</a>
-              <a className="nav-link">Contact</a>
+              <span className={`${this.props.currentRoute === 'Home' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Home')}}>Home</span>
+              <span className={`${this.props.currentRoute === 'Projects' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Projects')}}>Projects</span>
+              <span className={`${this.props.currentRoute === 'Blog' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Blog')}}>Blog</span>
+              <span className={`${this.props.currentRoute === 'Contact' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Contact')}}>Contact</span>
             </ul>
           </div>
         </div>
