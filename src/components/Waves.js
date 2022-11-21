@@ -2,12 +2,12 @@ import './Waves.css'
 
 export const Waves = () => {
   return (
-    <div className='container'>
+    <div className='waves-container'>
       <svg
         className="waves"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
-        shape-rendering="auto"
+        shapeRendering="auto"
       >
         <defs>
           <path
