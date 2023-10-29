@@ -1,8 +1,8 @@
-import './Waves.css'
+import "./Waves.css";
 
 export const Waves = () => {
   return (
-    <div className='waves-container'>
+    <div className="waves-container">
       <svg
         className="waves"
         viewBox="0 24 150 28"
@@ -20,19 +20,21 @@ export const Waves = () => {
             xlinkHref="#gentle-wave"
             x="48"
             y="0"
-            fill="rgba(139, 0, 0, 0.6)"
+            // gold: 212, 175, 55,
+            // silver: 192, 192, 192,
+            fill="rgba(192, 192, 192, 0.6)"
           />
           <use
             xlinkHref="#gentle-wave"
             x="48"
             y="3"
-            fill="rgba(139, 0, 0, 0.4)"
+            fill="rgba(192, 192, 192, 0.4)"
           />
           <use
             xlinkHref="#gentle-wave"
             x="48"
             y="5"
-            fill="rgba(139, 0, 0, 0.2)"
+            fill="rgba(192, 192, 192, 0.2)"
           />
         </g>
       </svg>
