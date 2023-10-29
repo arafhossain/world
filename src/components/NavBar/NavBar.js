@@ -24,7 +24,9 @@ class NavBar extends React.Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
             style={{ border: "none" }}
-            onClick={()=>{this.toggleCollapse()}}
+            onClick={() => {
+              this.toggleCollapse();
+            }}
           >
             <svg
               viewBox="0 0 100 80"
@@ -38,14 +40,34 @@ class NavBar extends React.Component {
             </svg>
           </button>
           <div
-            className={`${this.state.collapse ? "collapse" : "expand"} navbar-collapse`}
+            className={`${
+              this.state.collapse ? "collapse" : "expand"
+            } navbar-collapse`}
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <span className={`${this.props.currentRoute === 'Home' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Home')}}>Home</span>
-              <span className={`${this.props.currentRoute === 'Projects' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Projects')}}>Projects</span>
-              <span className={`${this.props.currentRoute === 'Blog' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Blog')}}>Blog</span>
-              <span className={`${this.props.currentRoute === 'Contact' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Contact')}}>Contact</span>
+              <span
+                className={`${
+                  this.props.currentRoute === "Home" ? "active" : ""
+                } nav-link`}
+                onClick={() => {
+                  this.props.clickRoute("Home");
+                }}
+              >
+                Home
+              </span>
+              <span
+                className={`${
+                  this.props.currentRoute === "Projects" ? "active" : ""
+                } nav-link`}
+                onClick={() => {
+                  this.props.clickRoute("Projects");
+                }}
+              >
+                Projects
+              </span>
+              {/* <span className={`${this.props.currentRoute === 'Blog' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Blog')}}>Blog</span> */}
+              {/* <span className={`${this.props.currentRoute === 'Contact' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Contact')}}>Contact</span> */}
             </ul>
           </div>
         </div>

@@ -1,0 +1,24 @@
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.navbar-toggle {
+  z-index: 3;
+}
+
+.nav-link {
+  color: gray;
+}
+.nav-link:hover {
+  color: darkgray;
+  cursor: pointer;
+}
+
+.nav-link.active {
+  color: gray !important;
+  cursor: default;
+  font-weight: bold;
+}
