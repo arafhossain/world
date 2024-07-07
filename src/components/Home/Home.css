@@ -1,7 +1,7 @@
 /* Home.css */
 
 .home-container {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   color: #e0e0e0;
   max-width: 800px;
   margin: 0 auto;
@@ -10,24 +10,25 @@
   flex-grow: 1; /* Allow it to grow and take available space */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Ensure content is at the top */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   position: relative; /* Ensure content is relative to smoke */
+  font-family: "Roboto", sans-serif; /* Use Roboto for body text */
 }
 
-.home-container h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.75rem;
-  margin: 1.5rem 0;
+.title {
+  font-family: "Playfair Display", serif; /* Use Playfair Display for titles */
+  font-size: 2.5rem; /* Ensure title is larger */
+  margin: 1rem 0; /* Adjust spacing around title */
   color: #e0e0e0;
 }
 
-.home-container p {
+.content p {
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem 0; /* Adjust padding for better spacing */
   text-align: justify;
-  line-height: 1.7;
-  font-size: 1.1rem;
+  line-height: 1.5; /* Adjust line-height for better readability */
+  font-size: 1rem; /* Standard body text size */
   color: #c0c0c0;
   max-width: 700px;
-  margin-bottom: 1rem;
 }
