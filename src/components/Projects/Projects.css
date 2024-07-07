@@ -1,12 +1,33 @@
-.projects {
-  padding: 2rem 0;
-  color: #c0c0c0;
+/* Projects.css */
+
+.projects-container {
+  padding: 3rem 1rem;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0d0d0d;
+  flex-grow: 1; /* Allow it to grow and take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure content is at the top */
+  position: relative; /* Ensure content is relative to smoke */
 }
 
-.projects img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  margin: 1rem 0;
-  border: 2px solid #d90429;
+.projects-container h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.75rem;
+  margin: 1.5rem 0;
+  color: #e0e0e0;
+}
+
+.projects-container p {
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #c0c0c0;
+  max-width: 700px;
+  margin-bottom: 1rem;
 }

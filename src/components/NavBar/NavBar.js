@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 class NavBar extends React.Component {
@@ -8,22 +9,18 @@ class NavBar extends React.Component {
       collapse: true,
     };
   }
+
   toggleCollapse() {
     this.setState({ collapse: !this.state.collapse });
   }
+
   render() {
     return (
-      <nav className="navbar navbar-expand-lg transparent">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style={{ border: "none" }}
             onClick={() => {
               this.toggleCollapse();
             }}
@@ -32,7 +29,7 @@ class NavBar extends React.Component {
               viewBox="0 0 100 80"
               width="30"
               height="30"
-              style={{ fill: "white", border: "none" }}
+              style={{ fill: "#e0e0e0" }}
             >
               <rect width="80" height="5"></rect>
               <rect y="30" width="80" height="5"></rect>
@@ -46,28 +43,31 @@ class NavBar extends React.Component {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <span
-                className={`${
-                  this.props.currentRoute === "Home" ? "active" : ""
-                } nav-link`}
-                onClick={() => {
-                  this.props.clickRoute("Home");
-                }}
-              >
-                Home
-              </span>
-              <span
-                className={`${
-                  this.props.currentRoute === "Projects" ? "active" : ""
-                } nav-link`}
-                onClick={() => {
-                  this.props.clickRoute("Projects");
-                }}
-              >
-                Projects
-              </span>
-              {/* <span className={`${this.props.currentRoute === 'Blog' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Blog')}}>Blog</span> */}
-              {/* <span className={`${this.props.currentRoute === 'Contact' ? 'active' : ''} nav-link`} onClick={()=>{this.props.clickRoute('Contact')}}>Contact</span> */}
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/projects" className="nav-link">
+                  Projects
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/about" className="nav-link">
+                  About Me
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link">
+                  Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/blog" className="nav-link">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
