@@ -1,10 +1,10 @@
-import "./Waves.css";
+import "./Smoke.css";
 
-export const Waves = () => {
+export const Smoke = () => {
   return (
-    <div className="waves-container">
+    <div className="smoke-container">
       <svg
-        className="waves"
+        className="smoke"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
         shapeRendering="auto"
@@ -20,8 +20,6 @@ export const Waves = () => {
             xlinkHref="#gentle-wave"
             x="48"
             y="0"
-            // gold: 212, 175, 55,
-            // silver: 192, 192, 192,
             fill="rgba(192, 192, 192, 0.6)"
           />
           <use

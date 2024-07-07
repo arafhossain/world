@@ -1,0 +1,12 @@
+.projects {
+  padding: 2rem 0;
+  color: #c0c0c0;
+}
+
+.projects img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 1rem 0;
+  border: 2px solid #d90429;
+}

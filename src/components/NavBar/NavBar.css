@@ -1,24 +1,30 @@
 .navbar-brand {
-  position: absolute;
   width: 100%;
-  left: 0;
   text-align: center;
   margin: 0 auto;
 }
-.navbar-toggle {
-  z-index: 3;
+
+.navbar-toggler {
+  background: none;
+  border: none;
+}
+
+.navbar-toggler svg {
+  fill: #e0e0e0;
 }
 
 .nav-link {
-  color: gray;
+  color: #e0e0e0;
+  transition: color 0.3s;
 }
+
 .nav-link:hover {
-  color: darkgray;
+  color: #d90429;
   cursor: pointer;
 }
 
 .nav-link.active {
-  color: gray !important;
+  color: #d90429 !important;
   cursor: default;
   font-weight: bold;
 }

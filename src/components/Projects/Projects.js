@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Projects.css";
 
 import con from "../../assets/construction.jpg";
 
