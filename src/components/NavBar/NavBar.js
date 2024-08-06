@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
 class NavBar extends React.Component {
@@ -43,31 +43,52 @@ class NavBar extends React.Component {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
+              <li>
+                <NavLink
+                  exact
+                  to="/"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Home
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <Link to="/projects" className="nav-link">
+              <li>
+                <NavLink
+                  to="/projects"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Projects
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-link">
-                  About Me
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link">
+              <li>
+                <NavLink
+                  to="/contact"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Contact
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <Link to="/blog" className="nav-link">
+              {/* <li>
+                <NavLink
+                  to="/about"
+                  activeClassName="active"
+                  className="nav-link"
+                >
+                  About
+                </NavLink>
+              </li> */}
+              {/* <li>
+                <NavLink
+                  to="/blog"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Blog
-                </Link>
-              </li>
+                </NavLink>
+              </li> */}
             </ul>
           </div>
         </div>

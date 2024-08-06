@@ -7,12 +7,11 @@ const Home = () => {
       <div className="title">Welcome to My Portfolio</div>
       <div className="content">
         <p>
-          Hi, I'm Araf, a passionate and dedicated software developer with a
-          keen eye for detail and a love for creating beautiful, functional, and
-          user-friendly digital experiences. With 4 years of experience in
-          front-end development, I have honed my skills in React and Typescript,
-          and I'm always eager to learn and explore new technologies and
-          methodologies.
+          Hello, I'm Araf. A curious and dedicated software enthusiast with a
+          keen eye for detail and a love for creating user-friendly digital
+          experiences. With 4 years of experience in front-end development, I
+          have honed my skills in React and Typescript, and am always eager to
+          learn and explore new technologies and methodologies.
         </p>
         <p>
           Throughout my career, I have worked on a variety of projects ranging
@@ -23,12 +22,12 @@ const Home = () => {
         </p>
         <p>
           When I'm not working, you can find me reading, exploring new places,
-          or spending quality time with family and friends. Feel free to browse
+          or spending quality time with friends and family. Feel free to browse
           through my work, and don't hesitate to get in touch if you have any
           questions or would like to discuss a potential project.
         </p>
         <p>
-          Thank you for visiting, and I look forward to connecting with you!
+          Thank you for visiting, and I look forward to connecting with you.
         </p>
       </div>
     </div>
